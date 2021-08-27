@@ -44,13 +44,13 @@ function my_keydown(e){
 			console.log("Arrow Key");
 		}
 
-		else if((keyPressed = 17)||(keyPressed = 18)||(keyPressed = 27)){
+		else if((keyPressed = 17,18,27)){
 			specialkey();
 			document.getElementById("d1").innerHTML = "You pressed Special Key";
 			console.log("Special Key");
 		}
 		
-		else {
+		else if((keyPressed = 10,14,15,127)){
 			otherkey();
 			document.getElementById("d1").innerHTML = "You pressed Other Key";
 			console.log("Other Key");
